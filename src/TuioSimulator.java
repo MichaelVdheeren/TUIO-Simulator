@@ -116,10 +116,11 @@ public class TuioSimulator {
 		//app.setSize(width, height);
 
 		// FULLSCREEN!	
-		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();  
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         app.setSize(screenSize);
         app.setResizable(false);
         app.setUndecorated(true);
+        app.setLocation(0, 0);
 		
 		app.setVisible(true);
 	}
